@@ -1,6 +1,6 @@
 # SMK-Remove ESP32
 
-![ESP32 Web Server and IR remote](../blob/master/images/Build_an_ESP32_web_server_and_ir_remote.jpg)
+![ESP32 Web Server and IR remote](https://github.com/e-tinkers/esp32_ir_remote/blob/master/images/Build_an_ESP32_web_server_and_ir_remote.jpg)
 
 This repo is the implementaiton of an ESP32 IR remote (and a ESP32 web server) that I described on my blog [Build an ESP32 Web Server and IR Remote](https://www.e-tinkers.com/2019/11/build-an-esp32-web-server-and-ir-remote/). The ESP32 is programmed to provide the following key features and functionalities:
 - Web server supporting GET and POST requests
@@ -11,7 +11,7 @@ This repo is the implementaiton of an ESP32 IR remote (and a ESP32 web server) t
 
 ## System Diagram
 
-![ESP32 IR Remote System Diagram](../blob/master/images/system_diagram_of_esp32_web_server_and_IR_remote.png)
+![ESP32 IR Remote System Diagram](https://github.com/e-tinkers/esp32_ir_remote/blob/master/images/system_diagram_of_esp32_web_server_and_IR_remote.png)
 
 ## Pre-requisitions
 
@@ -55,4 +55,4 @@ The program starts as a WiFi station with a pre-defined static IP and gateway IP
 ![ESP32 IR remote schematic](../blob/master/images/ESP32_web_server_ir_remote_schematic_diagram.png)
 
 ## Demo Video
-![ESP32 Web Server and IR remote](../blob/master/images/Build_an_ESP32_web_server_and_ir_remote.jpg)(https://youtu.be/pLeZRZ8aO1U)
+![ESP32 Web Server and IR remote](https://github.com/e-tinkers/esp32_ir_remote/blob/master/images/Build_an_ESP32_web_server_and_ir_remote.jpg)(https://youtu.be/pLeZRZ8aO1U)
