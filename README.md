@@ -52,7 +52,7 @@ The program starts as a WiFi station with a pre-defined static IP and gateway IP
 
 ## ESP32 IR Remote Schematic
 
-![ESP32 IR remote schematic](../blob/master/images/ESP32_web_server_ir_remote_schematic_diagram.png)
+![ESP32 IR remote schematic](https://github.com/e-tinkers/esp32_ir_remote/blob/master/images/ESP32_web_server_ir_remote_schematic_diagram.png)
 
 ## Demo Video
 ![ESP32 Web Server and IR remote](https://github.com/e-tinkers/esp32_ir_remote/blob/master/images/Build_an_ESP32_web_server_and_ir_remote.jpg)(https://youtu.be/pLeZRZ8aO1U)
