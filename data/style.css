@@ -1,0 +1,36 @@
+* {box-sizing: border-box;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif}
+body {min-width: 320px;margin: auto;width:320px;height: 100vh}
+.grid-container {display: grid;grid-template-columns: auto auto auto;background-color: #222222;padding: 10px}
+.grid-item {padding: 10px;font-size: 2rem;text-align: center}
+.grid-item-narrow {padding: 0 10px; text-align: center}
+.deco {font-size: 12px;color: #888888}
+footer{padding:30px;text-align:center;width:100%;color:#ffffff;background:#222222;font-size:0.8rem}
+@font-face{font-family:'FontAwesome';src:url('fontawesome-webfont.woff?v=4.6.3') format('woff');font-weight:normal;font-style:normal}
+.fa{display:inline-block;font:normal normal normal 14px/1 FontAwesome;font-size:inherit;text-rendering:auto;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+.fa-stack{position:relative;display:inline-block;width:2em;height:2em;line-height:2em;vertical-align:middle}
+.fa-stack-1x,.fa-stack-2x{position:absolute;left:0;width:100%;text-align:center}
+.fa-stack-1x{line-height:inherit}
+.fa-stack-2x{font-size:2em}
+.fa-inverse{color:#fff}
+.fa-circle:before{content:"\f111"}
+.fa-power-off:before{content:"\f011"}
+.fa-sign-out:before{content:"\f08b"}
+.fa-plus:before{content:"\f067"}
+.fa-chevron-up:before{content:"\f077"}
+.fa-chevron-down:before{content:"\f078"}
+.fa-minus:before{content:"\f068"}
+.fa-angle-double-up:before{content:"\f102"}
+.fa-circle-thin:before{content:"\f1db"}
+.fa-volume-off:before{content:"\f026"}
+.fa-ban:before{content:"\f05e"}
+@font-face {font-family: "D7MI";src: url("DSEG7Modern-Italic.woff") format('woff');}
+.D7MI {font-family: "D7MI"}
+.display-frame {position:relative;border:6px solid #000;border-radius:9px;height:165px;width:270px;box-shadow: 4px 4px 1px 0px rgba(0,0,0,0.1) inset;margin: auto;background: #ccffcc}
+.time-reading {z-index:100;position:absolute;top:20px;left:15px;font-size:65px}
+.temp-unit {position:absolute;top:60px;left:225px;font-size:27px}
+.mask {z-index: 50;color: rgba(0, 0, 0, 0.05)}
+.second-line,.second-line-display {position: absolute;top: 110px;left: 15px;font-size: 26px;}
+.humidity {margin-left: 23px;}
+.smaller {font-size: 16px;margin:2px}
+#indicator {display:none}
+#temp-display {padding: 5px 25px}

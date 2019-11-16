@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="apple-mobile-web-app-title" content="ESP32 Remote">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <title>ESP32 Remote</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="fa-stack icons">
+          <i class="fa fa-circle fa-stack-2x" style="color:red;"></i>
+          <i id="tv-on_off 00" class="fa fa-power-off fa-stack-1x fa-inverse"></i>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="fa-stack icons">
+          <i id="indicator" class="fa fa-angle-double-up fa-stack-1x fa-inverse"></i>
+        </div>
+      </div>
+      <div class="grid-item icons">
+        <div class="fa-stack">
+          <i class="fa fa-circle fa-stack-2x" style="color:red;"></i>
+          <i id="settop-on_off 07" class="fa fa-power-off fa-stack-1x fa-inverse"></i>
+        </div>
+      </div>
+      <div class="grid-item-narrow">
+          <span class="deco">TV</span>
+      </div>
+      <div class="grid-item-narrow"></div>
+      <div class="grid-item-narrow">
+          <span class="deco">Set-top</span>
+      </div>
+    </div>
+    <div class="grid-container" id="temp-display">
+      <div class="display-frame backlight">
+        <span class="time-reading D7MI mask">88:88</span>
+        <div class="second-line">
+          <span class="mask D7MI">88.8</span>
+          <span class="mask smaller">C</span>
+          <span class="humidity mask D7MI">88.8</span>
+          <span class="mask smaller">%RH</span>
+        </div>
+          <span id="time-value" class="time-reading D7MI">00:00</span>
+          <div class="second-line-display">
+            <span id="temp-value" class="second-reading-mask D7MI">00.0</span>
+            <span class="smaller">C</span>
+            <span id="humid-value" class="humidity second-reading-mask D7MI">00.0</span>
+            <span class="smaller">%RH</span>
+          </div>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="grid-item">
+        <div class="fa-stack icons">
+          <i id="settop-volume_up 02" class="fa fa-plus fa-stack-1x fa-inverse"></i>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="fa-stack icons">
+          <i class="fa fa-circle fa-stack-2x" style="color:#888888;"></i>
+          <i id="tv-source 01" class="fa fa-sign-out fa-stack-1x fa-inverse"></i>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="fa-stack icons">
+          <i id="settop-channel_up 03" class="fa fa-chevron-up fa-stack-1x fa-inverse"></i>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="fa-stack">
+          <span class="deco">Volume</span>
+        </div>
+      </div>
+      <div class="grid-item"></div>
+      <div class="grid-item">
+        <div class="fa-stack">
+          <span class="deco">Channel</span>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="fa-stack icons">
+          <i id="settop-volume_down 05" class="fa fa-minus fa-stack-1x fa-inverse"></i>
+        </div>
+      </div>
+      <div class="grid-item">
+        <div class="fa-stack icons">
+          <i class="fa fa-volume-off fa-stack-2x fa-inverse"></i>
+          <i id="settop-mute 04" class="fa fa-ban fa-stack-2x" style="color: #888888;"></i>
+        </div>
+      </div>
+
+      <div class="grid-item icons">
+        <div class="fa-stack">
+          <i id="settop-channel_dn 06" class="fa fa-chevron-down fa-stack-1x fa-inverse"></i>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">--- An E-Tinkers Project ---</footer>
+
+    <script src="script.js" type="text/javascript"></script>
+  </body>
+</html>
