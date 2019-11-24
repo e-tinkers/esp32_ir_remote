@@ -27,7 +27,7 @@ byte SEND_PIN = 5;
 IRsend irsend(SEND_PIN);
 unsigned long infraRedCode[] = {
   0xE0E040BF, //tv on-off
-  0xE0E0807f, //tv source
+  0xE0E0807F, //tv source
   0x807F827D, //set-top volume up
   0x807FE817, //set-top channel up
   0x807F48B7, //set-top mute
@@ -38,12 +38,12 @@ unsigned long infraRedCode[] = {
 
 
 void connectToWiFi() {
-    Serial.begin(115200);
-    Serial.printf("Connecting to WiFi %s\n", ssid);
-    WiFi.config(staticIP, gateway, subnet);
-    WiFi.begin(ssid, password);
+    Serial.print("Setting WiFi Configuration ... ");
+    Serial.println(WiFi.config(staticIP, gateway, subnet) ? "Ready" : "Failed");
+    Serial.printf("Connecting to WiFi %s ... ", ssid);
+    Serial.println(WiFi.begin(ssid, password) ? "Ready" : "Failed");
     while (WiFi.status() != WL_CONNECTED) {
-      delay(500);
+      delay(200);
     }
     Serial.println(WiFi.localIP());
     Serial.println(WiFi.macAddress());
@@ -94,10 +94,11 @@ void onBody(AsyncWebServerRequest *request, uint8_t *data, size_t len, size_t in
 
 void setup() {
 
+    Serial.begin(115200);
+    SHT21.begin();
+
     // Connect to WiFi
     connectToWiFi();
-
-    SHT21.begin();
 
     // Initialize SPIFFS (SPI Flash File System)
     SPIFFS.begin(true);
