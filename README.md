@@ -56,3 +56,5 @@ The program starts as a WiFi station with a pre-defined static IP and gateway IP
 
 ## Demo Video
 [![ESP32 Web Server and IR remote](https://github.com/e-tinkers/esp32_ir_remote/blob/master/images/youtube_screen_capture.png)](https://youtu.be/pLeZRZ8aO1U)
+
+There is a [video](https://engineers.sg/video/build-an-esp32-ir-remote-hackware-v5-8--3823) of a 10-min talk about this project on Singapore [Hackware](https://www.meetup.com/hackware/) meetup event on 3 Dec, 2019.
