@@ -47,8 +47,8 @@ To upload the files to SPIFFS, it requires an [Arduino IDE plugin](https://githu
 The program starts as a WiFi station with a pre-defined static IP and gateway IP. Be sure to change the static IP and gateway information prior compilation. The default Static IP is `192.168.0.200` and the gateway is `192.168.0.1` with a netmask of `255.255.255.0`. Be sure you also make the change of WiFi SSID and Password as well:
 
     // replace the ssid and password
-    const char* ssid     = "DIDI0";
-    const char* password = "blinkie291boo";
+    const char* ssid     = "your_WiFi_SSID";
+    const char* password = "your_WiFi_password";
 
 ## ESP32 IR Remote Schematic
 
