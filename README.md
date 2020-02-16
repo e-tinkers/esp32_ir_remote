@@ -1,4 +1,4 @@
-# SMK-Remove ESP32
+# ESP32 IR Remote
 
 ![ESP32 Web Server and IR remote](https://github.com/e-tinkers/esp32_ir_remote/blob/master/images/Build_an_ESP32_web_server_and_ir_remote.jpg)
 
@@ -57,4 +57,4 @@ The program starts as a WiFi station with a pre-defined static IP and gateway IP
 ## Demo Video
 [![ESP32 Web Server and IR remote](https://github.com/e-tinkers/esp32_ir_remote/blob/master/images/youtube_screen_capture.png)](https://youtu.be/pLeZRZ8aO1U)
 
-There is also a [video](https://engineers.sg/video/build-an-esp32-ir-remote-hackware-v5-8--3823) of my 10-min talk about this project on Singapore [Hackware](https://www.meetup.com/hackware/) meetup event on 3 Dec, 2019.
+There is also a [video](https://youtu.be/qj1ApfKjbfU) of my 10-min talk about this project on Singapore [Hackware](https://www.meetup.com/hackware/) meetup event on 3 Dec, 2019.
